@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="person" class="com.InnerExample.Person">
+<property name="name" value="rahul"></property>
+<property name="address" value="Chennai"></property>
+</bean>
+<bean id="cust1" class="com.InnerExample.Customer">
+<property name="p" ref="person"></property>
+</bean>
+</beans>
